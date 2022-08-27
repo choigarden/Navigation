@@ -63,12 +63,12 @@
 				47CF0F5C28BA793200063987 /* AppDelegate.swift */,
 				47CF0F5E28BA793200063987 /* SceneDelegate.swift */,
 				47CF0F6028BA793200063987 /* ViewController.swift */,
+				47CF0F7328BA81ED00063987 /* EditViewController.swift */,
 				47CF0F6228BA793200063987 /* Main.storyboard */,
 				47CF0F6828BA793300063987 /* Assets.xcassets */,
 				47CF0F6A28BA793300063987 /* LaunchScreen.storyboard */,
 				47CF0F6D28BA793300063987 /* Info.plist */,
 				47CF0F6528BA793200063987 /* Navigation.xcdatamodeld */,
-				47CF0F7328BA81ED00063987 /* EditViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
