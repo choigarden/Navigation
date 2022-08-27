@@ -44,7 +44,7 @@
         <!--수정 화면-->
         <scene sceneID="IgS-pS-GH5">
             <objects>
-                <viewController id="UWR-5g-UJ9" sceneMemberID="viewController">
+                <viewController id="UWR-5g-UJ9" customClass="EditViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q7o-Ca-K43">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,12 +61,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="완료"/>
+                                <connections>
+                                    <action selector="btnDone:" destination="UWR-5g-UJ9" eventType="touchUpInside" id="IH9-il-D8j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Am4-65-Y9d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="수정 화면" id="Nw9-hK-zqg"/>
+                    <connections>
+                        <outlet property="lblWay" destination="BVG-lw-dut" id="Cud-EG-uea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPq-rR-2yC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

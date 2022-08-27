@@ -14,6 +14,7 @@
 		47CF0F6728BA793200063987 /* Navigation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47CF0F6528BA793200063987 /* Navigation.xcdatamodeld */; };
 		47CF0F6928BA793300063987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CF0F6828BA793300063987 /* Assets.xcassets */; };
 		47CF0F6C28BA793300063987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CF0F6A28BA793300063987 /* LaunchScreen.storyboard */; };
+		47CF0F7428BA81ED00063987 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF0F7328BA81ED00063987 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		47CF0F6828BA793300063987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47CF0F6B28BA793300063987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47CF0F6D28BA793300063987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47CF0F7328BA81ED00063987 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				47CF0F6A28BA793300063987 /* LaunchScreen.storyboard */,
 				47CF0F6D28BA793300063987 /* Info.plist */,
 				47CF0F6528BA793200063987 /* Navigation.xcdatamodeld */,
+				47CF0F7328BA81ED00063987 /* EditViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CF0F7428BA81ED00063987 /* EditViewController.swift in Sources */,
 				47CF0F6128BA793200063987 /* ViewController.swift in Sources */,
 				47CF0F5D28BA793200063987 /* AppDelegate.swift in Sources */,
 				47CF0F5F28BA793200063987 /* SceneDelegate.swift in Sources */,
