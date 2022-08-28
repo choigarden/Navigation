@@ -38,6 +38,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-Fh-5dP">
+                                <rect key="frame" x="16" y="316" width="227" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,6 +54,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imgView" destination="sHF-Fh-5dP" id="f5O-nr-L6W"/>
                         <outlet property="txMessage" destination="hs7-ZU-UoA" id="R7o-4s-N1w"/>
                     </connections>
                 </viewController>
@@ -94,6 +99,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="켜기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9d-YP-BFe">
+                                <rect key="frame" x="249" y="177" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQa-Cd-3iq">
+                                <rect key="frame" x="327" y="177" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="swImageOnOff:" destination="UWR-5g-UJ9" eventType="valueChanged" id="nHM-7t-NEP"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Am4-65-Y9d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,6 +120,7 @@
                     <navigationItem key="navigationItem" title="수정 화면" id="Nw9-hK-zqg"/>
                     <connections>
                         <outlet property="lblWay" destination="BVG-lw-dut" id="Cud-EG-uea"/>
+                        <outlet property="swIsOn" destination="CQa-Cd-3iq" id="YyE-ov-CPR"/>
                         <outlet property="txMessage" destination="I37-fQ-qdy" id="GRZ-6b-9QO"/>
                     </connections>
                 </viewController>

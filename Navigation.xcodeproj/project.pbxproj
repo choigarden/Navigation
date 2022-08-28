@@ -15,6 +15,8 @@
 		47CF0F6928BA793300063987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47CF0F6828BA793300063987 /* Assets.xcassets */; };
 		47CF0F6C28BA793300063987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CF0F6A28BA793300063987 /* LaunchScreen.storyboard */; };
 		47CF0F7428BA81ED00063987 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF0F7328BA81ED00063987 /* EditViewController.swift */; };
+		47CF0F7728BB3ED100063987 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CF0F7528BB3ED100063987 /* lamp_on.png */; };
+		47CF0F7828BB3ED100063987 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CF0F7628BB3ED100063987 /* lamp_off.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		47CF0F6B28BA793300063987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47CF0F6D28BA793300063987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47CF0F7328BA81ED00063987 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		47CF0F7528BB3ED100063987 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		47CF0F7628BB3ED100063987 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		47CF0F5B28BA793200063987 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				47CF0F7628BB3ED100063987 /* lamp_off.png */,
+				47CF0F7528BB3ED100063987 /* lamp_on.png */,
 				47CF0F5C28BA793200063987 /* AppDelegate.swift */,
 				47CF0F5E28BA793200063987 /* SceneDelegate.swift */,
 				47CF0F6028BA793200063987 /* ViewController.swift */,
@@ -131,7 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CF0F7728BB3ED100063987 /* lamp_on.png in Resources */,
 				47CF0F6C28BA793300063987 /* LaunchScreen.storyboard in Resources */,
+				47CF0F7828BB3ED100063987 /* lamp_off.png in Resources */,
 				47CF0F6928BA793300063987 /* Assets.xcassets in Resources */,
 				47CF0F6428BA793200063987 /* Main.storyboard in Resources */,
 			);

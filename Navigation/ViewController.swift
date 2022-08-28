@@ -9,12 +9,22 @@ import UIKit
 
 class ViewController: UIViewController, EditDelegate {
     
+    let imgOn = UIImage(named: "lamp_on.png")
+
+    let imgOff = UIImage(named: "lamp_off.png")
+    
+    var isOn = true
     
     @IBOutlet var txMessage: UITextField!
+    
+    @IBOutlet var imgView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        imgView.image = imgOn
+        
     }
 
     
@@ -34,6 +44,8 @@ class ViewController: UIViewController, EditDelegate {
         
         editViewController.textMessage = txMessage.text!
         
+        editViewController.isOn = isOn
+        
         editViewController.delegate = self
         
     }
@@ -42,7 +54,17 @@ class ViewController: UIViewController, EditDelegate {
         txMessage.text = message
     }
     
+    func didImageOnOffDone(_ controller: EditViewController, isOn: Bool) {
+        if isOn {
+            imgView.image = imgOn
+            self.isOn = true
+        } else {
+            imgView.image = imgOff
+            self.isOn = false
+        }
+    }
     
+
     
     
     
