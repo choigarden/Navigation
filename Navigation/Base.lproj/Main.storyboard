@@ -39,7 +39,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-Fh-5dP">
-                                <rect key="frame" x="16" y="316" width="227" height="303"/>
+                                <rect key="frame" x="16" y="317" width="168" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -113,12 +113,22 @@
                                     <action selector="swImageOnOff:" destination="UWR-5g-UJ9" eventType="valueChanged" id="nHM-7t-NEP"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46U-Yk-eDp">
+                                <rect key="frame" x="158" y="126" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="btnResizeImage:" destination="UWR-5g-UJ9" eventType="touchUpInside" id="iv0-MZ-LIT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Am4-65-Y9d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="수정 화면" id="Nw9-hK-zqg"/>
                     <connections>
+                        <outlet property="btnResize" destination="46U-Yk-eDp" id="LEv-Fu-le4"/>
                         <outlet property="lblWay" destination="BVG-lw-dut" id="Cud-EG-uea"/>
                         <outlet property="swIsOn" destination="CQa-Cd-3iq" id="YyE-ov-CPR"/>
                         <outlet property="txMessage" destination="I37-fQ-qdy" id="GRZ-6b-9QO"/>
